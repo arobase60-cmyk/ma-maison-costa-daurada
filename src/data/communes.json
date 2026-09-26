@@ -188,6 +188,80 @@
      "prixM2": null,
    "anneePrix": null,
     "description": "Village de caractère entouré de montagnes, adapté aux amateurs de tranquillité."
-  }
+  },
+
+{
+  "nom": "Altafulla",
+  "type": "village",
+  "mer": 0,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison individuelle",
+    "Villa avec piscine"
+  ],
+  "prixM2": 2969,
+"anneePrix": 2026,
+"sourcePrix": "Idealista - juillet 2026",
+  "description": "Village historique en bord de mer, avec une plage, une gare et des commerces."
+},
+{
+  "nom": "Torredembarra",
+  "type": "ville",
+  "mer": 0,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison individuelle",
+    "Villa avec piscine"
+  ],
+  "prixM2": 2399,
+"anneePrix": 2026,
+"sourcePrix": "Idealista - août 2026",
+  "description": "Ville côtière avec de longues plages, un centre historique et des services à l'année."
+},
+
+{
+  "nom": "L'Ametlla de Mar",
+  "type": "petite_ville",
+  "mer": 0,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison individuelle",
+    "Villa avec piscine"
+  ],
+  "prixM2": 2237,
+"anneePrix": 2026,
+"sourcePrix": "Idealista - août 2026",
+  "description": "Village de pêcheurs avec un port, de nombreuses criques et des quartiers résidentiels en bord de mer."
+},
+{
+  "nom": "L'Ampolla",
+  "type": "petite_ville",
+  "mer": 0,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison individuelle",
+    "Villa avec piscine"
+  ],
+  "prixM2": 2100,
+"anneePrix": 2026,
+"sourcePrix": "Idealista - août 2026",
+  "description": "Petite ville méditerranéenne avec un port de plaisance, des plages et un accès au delta de l'Èbre."
+}
+
+
+
+  
 ]
   
