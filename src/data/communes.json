@@ -52,8 +52,9 @@
   "Villa avec piscine"
 ],
   
-     "prixM2": null,
-   "anneePrix": null,
+   "prixM2": 2290,
+    "anneePrix": 2026,
+    "sourcePrix": "Idealista - août 2026",
     "description": "Secteur résidentiel avec des plages, des criques et des maisons individuelles."
   },
   {
@@ -70,8 +71,9 @@
   "Villa avec piscine"
 ],
   
-     "prixM2": null,
-   "anneePrix": null,
+   "prixM2": 2062,
+   "anneePrix": 2026,
+   "sourcePrix": "Fotocasa - août 2026, ensemble de la commune",
     "description": "Petite ville côtière avec un port de plaisance et des services à l'année."
   },
   {
@@ -89,8 +91,9 @@
   "Villa avec piscine"
 ],
   
-     "prixM2": null,
-   "anneePrix": null,
+    "prixM2": 1666,
+    "anneePrix": 2026,
+     "sourcePrix": "Idealista - août 2026, secteur Mont-roig",
     "description": "Village traditionnel proche de la mer, avec des maisons anciennes."
   },
   {
@@ -107,8 +110,9 @@
   "Villa avec piscine"
 ],
   
-     "prixM2": null,
-   "anneePrix": null,
+   "prixM2": 1481,
+   "anneePrix": 2026,
+   "sourcePrix": "RealAdvisor - septembre 2026, estimation",
     "description": "Village catalan situé à quelques kilomètres de Cambrils."
   },
   {
@@ -143,8 +147,9 @@
   "Villa avec piscine"
 ],
   
-     "prixM2": null,
-   "anneePrix": null,
+     "prixM2": 1716,
+     "anneePrix": 2026,
+     "sourcePrix": "Idealista - août 2026",
     "description": "Ville dynamique disposant de nombreux commerces, services et équipements."
   },
   {
@@ -161,8 +166,9 @@
   "Villa avec piscine"
 ],
   
-     "prixM2": null,
-   "anneePrix": null,
+    "prixM2": 2100,
+    "anneePrix": 2026,
+    "sourcePrix": "Idealista - août 2026",
     "description": "Ville historique en bord de mer, avec de nombreux services."
   },
   {
