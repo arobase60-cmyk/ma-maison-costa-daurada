@@ -19,6 +19,9 @@ export function getStaticPaths() {
 }
 
 const { commune } = Astro.props;
+const quartiers = "quartiers" in commune
+  ? (commune.quartiers ?? [])
+  : [];
 ---
 
 <html lang="fr">
@@ -40,61 +43,140 @@ const { commune } = Astro.props;
 
       <p>{commune.description}</p>
 
-      <h2>Informations pratiques</h2>
+      
+<h2>Vivre à {commune.nom}</h2>
 
-      <p>
-        <strong>Distance de la mer :</strong>
-        {commune.mer === 0
-          ? " En bord de mer"
-          : ` Environ ${commune.mer} minutes`}
-      </p>
+<div class="infos-grid">
+
+  <div class="info-card">
+    <strong>🌊 Proximité de la mer</strong>
+    <p>
+      {commune.mer === 0
+        ? "En bord de mer"
+        : `À environ ${commune.mer} minutes de la mer`}
+    </p>
+  </div>
+
+  <div class="info-card">
+    <strong>🛍️ Commerces</strong>
+    <p>
+      {commune.commerces
+        ? "Commerces et services disponibles"
+        : "Disponibilité à vérifier"}
+    </p>
+  </div>
+
+  <div class="info-card">
+    <strong>🚆 Gare ferroviaire</strong>
+    <p>
+      {commune.gare
+        ? "Gare dans la commune"
+        : "Pas de gare dans la commune"}
+    </p>
+  </div>
+
+  <div class="info-card">
+    <strong>☀️ Ambiance</strong>
+    <p>
+      {commune.animation === "toute_annee"
+        ? "Vivante toute l'année"
+        : commune.animation === "calme"
+          ? "Calme et résidentielle"
+          : "Animée principalement en saison"}
+    </p>
+  </div>
+
+</div>
+
+<section class="immobilier-card">
+  <h2>Immobilier à {commune.nom}</h2>
+
+  <div class="prix-immobilier">
+    <div>Prix indicatif au m²</div>
+
+    <div>
+      {commune.prixM2 != null
+        ? `${commune.prixM2.toLocaleString("fr-FR")} €`
+        : "Données à compléter"}
+    </div>
+
+    {commune.anneePrix && (
+      <small>Référence : {commune.anneePrix}</small>
+    )}
+  </div>
+
+  {commune.sourcePrix && (
+    <p>
+      <strong>Source :</strong> {commune.sourcePrix}
+    </p>
+  )}
+
+  <h3>Types de biens</h3>
+
+  <ul>
+    {commune.typesBiens?.map((type) => (
+      <li>{type}</li>
+    ))}
+  </ul>
+
+  <p>
+    <small>
+      Prix indicatifs susceptibles de varier selon le quartier,
+      l'état et les caractéristiques du logement.
+    </small>
+  </p>
+</section>
 
 
-<h2>Services et transports</h2>
+{quartiers.length > 0 && (
+  <section class="quartiers-section">
+    <h2>Les quartiers où acheter à {commune.nom}</h2>
 
-<p>
-  <strong>Commerces :</strong>
-  {commune.commerces
-    ? " Commerces et services disponibles"
-    : " À vérifier"}
-</p>
-
-<p>
-  <strong>Gare ferroviaire :</strong>
-  {commune.gare
-    ? " Oui"
-    : " Non"}
-</p>
+    <div class="quartiers-grid">
+      {quartiers.map((quartier) => (
+        <article class="quartier-card">
+          <h3>{quartier.nom}</h3>
+          <p>{quartier.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+)}
 
 
-<h2>Cadre de vie</h2>
 
-<p>
-  <strong>Ambiance :</strong>
-  {commune.animation === "toute_annee"
-    ? "Ville vivante toute l'année"
-    : commune.animation === "calme"
-      ? "Commune calme et résidentielle"
-      : "Station touristique animée en saison"}
-</p>
+      
+<section class="contact-card">
+  <h2>Un projet immobilier à {commune.nom} ?</h2>
 
-      <h2>Immobilier</h2>
+  <p>
+    Besoin d'aide pour trouver un bien, organiser vos visites
+    ou préparer votre installation sur la Costa Daurada ?
+  </p>
 
-      <p>
-        <strong>Prix moyen au m² :</strong>
-        {commune.prixM2 != null
-          ? ` ${commune.prixM2.toLocaleString("fr-FR")} €`
-          : " Données à compléter"}
-      </p>
+  <a
+    href={`/?commune=${encodeURIComponent(commune.nom)}#contact`}
+    class="contact-button"
+  >
+    Parlons de votre projet →
+  </a>
+</section>
 
-      <a
-  href={`/?commune=${encodeURIComponent(commune.nom)}#contact`}
-  class="contact-button"
->
-  Vous souhaitez acheter à {commune.nom} ?
-  Parlons de votre projet →
-</a>
     </main>
+
+<footer class="site-footer">
+  <p>© 2026 Ma Maison Costa Daurada</p>
+
+  <nav aria-label="Informations juridiques">
+    <a href="/mentions-legales/">Mentions légales</a>
+    <a href="/politique-confidentialite/">Confidentialité</a>
+    <a href="/politique-cookies/">Cookies</a>
+    <a href="/cgv/">CGV</a>
+  </nav>
+</footer>
+
+
+
   </body>
 </html>
 
@@ -142,4 +224,155 @@ const { commune } = Astro.props;
 .contact-button:hover {
   background: #dca342;
 }
+.immobilier-card {
+  background: white;
+  border: 1px solid #dce9e9;
+  border-radius: 16px;
+  padding: 28px;
+  margin: 30px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.prix-immobilier {
+  background: #edf7f7;
+  border-radius: 12px;
+  padding: 22px;
+  text-align: center;
+  color: #176b78;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.infos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 25px 0 35px;
+}
+
+.info-card {
+  background: white;
+  border: 1px solid #dce9e9;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.info-card strong {
+  display: block;
+  color: #176b78;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .infos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.contact-card {
+  background: #edf7f7;
+  border: 1px solid #dce9e9;
+  border-radius: 16px;
+  padding: 35px 25px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.contact-card h2 {
+  color: #176b78;
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.contact-card p {
+  max-width: 600px;
+  margin: 15px auto 25px;
+  line-height: 1.6;
+}
+
+.contact-card .contact-button {
+  display: inline-block;
+  background: #e7b65c;
+  color: #263d46;
+  padding: 16px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-card .contact-button:hover {
+  background: #dca342;
+}
+
+.quartiers-section {
+  margin: 50px auto;
+}
+
+.quartiers-section h2 {
+  color: #263d46;
+  margin-bottom: 24px;
+}
+
+.quartiers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.quartier-card {
+  background: #f4f8f8;
+  border: 1px solid #e0e9e9;
+  border-radius: 14px;
+  padding: 25px;
+}
+
+.quartier-card h3 {
+  color: #263d46;
+  margin: 0 0 12px;
+}
+
+.quartier-card p {
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 650px) {
+  .quartiers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.site-footer {
+  margin-top: 60px;
+  padding: 35px 20px;
+  background: #263d46;
+  color: white;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0 0 18px;
+}
+
+.site-footer nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 25px;
+}
+
+.site-footer a {
+  color: #e7b65c;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+
+
 </style>

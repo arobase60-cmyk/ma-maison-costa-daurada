@@ -17,7 +17,27 @@
   
     "prixM2": 2378.66,
    "anneePrix": 2026,
-    "description": "Ville côtière avec un port, des plages et des commerces ouverts toute l'année."
+    "description": "Ville côtière avec un port, des plages et des commerces ouverts toute l'année.",
+    
+"quartiers": [
+  {
+    "nom": "Centre historique",
+    "description": "Rues anciennes, commerces de proximité et ambiance catalane. Un secteur à découvrir pour ceux qui apprécient la vie de village."
+  },
+  {
+    "nom": "Le port",
+    "description": "Restaurants, commerces et promenade maritime. Un secteur proche des plages et animé, particulièrement pendant la saison touristique."
+  },
+  {
+    "nom": "Vilafortuny",
+    "description": "Quartier résidentiel avec des appartements et des maisons, à proximité des plages. Un secteur à explorer pour une résidence secondaire."
+  },
+  {
+    "nom": "La Llosa",
+    "description": "Quartier résidentiel proche de la mer, avec des appartements et des maisons. Une possibilité pour ceux qui recherchent un environnement plus résidentiel."
+  }
+]
+
   },
   {
     "nom": "Salou", 
@@ -36,10 +56,31 @@
   
      "prixM2": 2422.11,
    "anneePrix": 2026,
-    "description": "Station balnéaire animée, avec de nombreux appartements de vacances."
+    "description": "Station balnéaire animée, avec de nombreux appartements de vacances.",
+    
+"quartiers": [
+  {
+    "nom": "Centre et promenade Jaume I",
+    "description": "Le cœur touristique de Salou, avec ses restaurants, commerces et sa promenade en bord de mer. Un secteur animé, particulièrement en été, avec de nombreux appartements."
+  },
+  {
+    "nom": "Cap Salou",
+    "description": "Un secteur plus résidentiel, connu pour ses criques, ses espaces naturels et ses vues sur la Méditerranée. On y trouve des appartements et des maisons."
+  },
+  {
+    "nom": "Plage de Ponent",
+    "description": "À l'ouest du centre, ce secteur offre une grande plage, des commerces et une proximité avec Cambrils. Il peut intéresser les acheteurs recherchant un appartement près de la mer."
+  },
+  {
+    "nom": "Plage de Llevant",
+    "description": "La plage principale de Salou, à proximité de la promenade Jaume I. Un emplacement central avec de nombreux services, mais très fréquenté pendant la saison touristique."
+  }
+]
+
   },
   {
     "nom": "Miami Platja",
+    "image": "/images/miami-platja.jpg",
     "type": "residentiel",
     "mer": 0,
     "animation": "saisonniere",
@@ -55,10 +96,31 @@
    "prixM2": 2290,
     "anneePrix": 2026,
     "sourcePrix": "Idealista - août 2026",
-    "description": "Secteur résidentiel avec des plages, des criques et des maisons individuelles."
+    "description": "Secteur résidentiel avec des plages, des criques et des maisons individuelles.",
+    
+"quartiers": [
+  {
+    "nom": "Centre de Miami Platja",
+    "description": "Le secteur central, autour de l'avenue de Barcelone, avec ses commerces, restaurants et services. Pratique pour les personnes souhaitant pouvoir effectuer leurs achats à proximité."
+  },
+  {
+    "nom": "Playa Cristal",
+    "description": "Le secteur de la grande plage de sable, avec une promenade maritime, des restaurants et des résidences de vacances. Particulièrement recherché pour la proximité immédiate de la mer."
+  },
+  {
+    "nom": "Les criques",
+    "description": "Les secteurs proches des petites criques de Miami Platja, avec des appartements et des maisons. Ils offrent un cadre maritime différent de celui de la grande plage."
+  },
+  {
+    "nom": "Secteurs résidentiels intérieurs",
+    "description": "Les zones situées en retrait du littoral proposent notamment des maisons individuelles avec jardin et piscine. Il faut généralement prévoir davantage de déplacements pour rejoindre les plages."
+  }
+]
+
   },
   {
     "nom": "L'Hospitalet de l'Infant",
+    "image": "/images/hospitalet-infant.jpg",
     "type": "petite_ville",
     "mer": 0,
     "animation": "toute_annee",
@@ -74,7 +136,27 @@
    "prixM2": 2062,
    "anneePrix": 2026,
    "sourcePrix": "Fotocasa - août 2026, ensemble de la commune",
-    "description": "Petite ville côtière avec un port de plaisance et des services à l'année."
+    "description": "Petite ville côtière avec un port de plaisance et des services à l'année.",
+    
+"quartiers": [
+  {
+    "nom": "Centre-ville",
+    "description": "Le cœur de la commune, avec ses commerces, restaurants et services accessibles à pied. Un secteur pratique pour vivre à l'année ou profiter d'une résidence secondaire."
+  },
+  {
+    "nom": "Le port de plaisance",
+    "description": "Le secteur autour du port, proche des restaurants et du front de mer. Il permet de profiter des activités nautiques et des promenades sur le littoral."
+  },
+  {
+    "nom": "Plage de l'Arenal",
+    "description": "Un secteur situé près de la grande plage de sable, avec des appartements et des résidences de vacances. À découvrir pour un projet privilégiant la proximité de la mer."
+  },
+  {
+    "nom": "L'Almadrava",
+    "description": "Un secteur littoral plus éloigné du centre de L'Hospitalet, avec une plage et des habitations de vacances. Il convient de vérifier les déplacements nécessaires pour accéder aux commerces et services."
+  }
+]
+
   },
   {
     "nom": "Mont-roig del Camp",
@@ -94,10 +176,31 @@
     "prixM2": 1666,
     "anneePrix": 2026,
      "sourcePrix": "Idealista - août 2026, secteur Mont-roig",
-    "description": "Village traditionnel proche de la mer, avec des maisons anciennes."
+    "description": "Village traditionnel proche de la mer, avec des maisons anciennes.",
+    
+"quartiers": [
+  {
+    "nom": "Centre historique",
+    "description": "Le cœur du village, avec ses ruelles traditionnelles, ses commerces et ses services de proximité. Un secteur à découvrir pour ceux qui recherchent une maison de village et une ambiance catalane authentique."
+  },
+  {
+    "nom": "Secteurs résidentiels du village",
+    "description": "Les quartiers situés autour du centre proposent notamment des maisons individuelles et des logements plus récents. Ils permettent de profiter de la tranquillité du village tout en restant à proximité des commerces."
+  },
+  {
+    "nom": "Urbanisations vers le littoral",
+    "description": "Les secteurs résidentiels situés entre le village et la côte proposent principalement des maisons avec jardin, parfois avec piscine. La voiture est généralement nécessaire pour rejoindre les commerces et les plages."
+  },
+  {
+    "nom": "Environs ruraux",
+    "description": "Les espaces agricoles et les propriétés situés autour de Mont-roig offrent un environnement plus isolé, avec des vues sur la campagne et les montagnes. Pour un achat, il est important de vérifier l'accès, les raccordements et la situation urbanistique du bien."
+  }
+]
+
   },
   {
     "nom": "Montbrió del Camp",
+"image": "/images/montbrio.jpg",
     "type": "village",
     "mer": 15,
     "animation": "calme",
@@ -113,10 +216,31 @@
    "prixM2": 1481,
    "anneePrix": 2026,
    "sourcePrix": "RealAdvisor - septembre 2026, estimation",
-    "description": "Village catalan situé à quelques kilomètres de Cambrils."
+    "description": "Village catalan situé à quelques kilomètres de Cambrils.",
+    
+"quartiers": [
+  {
+    "nom": "Centre historique",
+    "description": "Le cœur du village, avec ses ruelles anciennes, ses places et ses commerces de proximité. On y trouve notamment des maisons de village, parfois avec terrasse ou patio."
+  },
+  {
+    "nom": "Quartiers résidentiels",
+    "description": "Les secteurs situés autour du centre proposent des appartements et des maisons individuelles, parfois avec jardin. Ils permettent de profiter du calme tout en restant proches des services du village."
+  },
+  {
+    "nom": "Secteur des thermes",
+    "description": "Les environs du centre thermal Termes Montbrió offrent un cadre résidentiel à proximité des équipements du village. Un secteur à explorer pour un projet de résidence secondaire."
+  },
+  {
+    "nom": "Environs ruraux",
+    "description": "Les espaces agricoles autour de Montbrió del Camp proposent un environnement plus isolé, avec notamment des oliveraies et des propriétés rurales. Avant un achat, il est important de vérifier les accès, les raccordements et les règles d'urbanisme."
+  }
+]
+
   },
   {
     "nom": "Riudoms",
+    "image": "/images/riudoms.jpg",
     "type": "village",
     "mer": 15,
     "animation": "toute_annee",
@@ -129,12 +253,34 @@
   "Villa avec piscine"
 ],
   
-     "prixM2": null,
-   "anneePrix": null,
-    "description": "Commune de l'intérieur avec des commerces et des maisons de village."
+    "prixM2": 1606,
+"anneePrix": 2026,
+"sourcePrix": "Idealista - août 2026",
+    "description": "Commune de l'intérieur avec des commerces et des maisons de village.",
+    
+"quartiers": [
+  {
+    "nom": "Centre historique",
+    "description": "Le cœur de Riudoms, avec ses rues traditionnelles, ses places et ses commerces de proximité. On y trouve notamment des maisons de village, parfois avec patio ou terrasse."
+  },
+  {
+    "nom": "Quartiers résidentiels",
+    "description": "Les secteurs autour du centre proposent des appartements et des maisons individuelles. Ils permettent de profiter des services du village dans un environnement principalement résidentiel."
+  },
+  {
+    "nom": "Abords du village",
+    "description": "Les zones situées à la périphérie de Riudoms offrent davantage d'espace et comprennent notamment des maisons avec jardin. Un secteur à explorer pour ceux qui recherchent le calme tout en restant proches du centre."
+  },
+  {
+    "nom": "Environs ruraux",
+    "description": "La campagne autour de Riudoms compte des terres agricoles, des oliveraies et des propriétés rurales. Pour un achat, il est important de vérifier les accès, les raccordements et la situation urbanistique du bien."
+  }
+]
+
   },
   {
     "nom": "Reus",
+    "image": "/images/reus.jpg",
     "type": "ville",
     "mer": 15,
     "animation": "toute_annee",
@@ -150,10 +296,31 @@
      "prixM2": 1716,
      "anneePrix": 2026,
      "sourcePrix": "Idealista - août 2026",
-    "description": "Ville dynamique disposant de nombreux commerces, services et équipements."
+    "description": "Ville dynamique disposant de nombreux commerces, services et équipements.",
+    
+"quartiers": [
+  {
+    "nom": "Centre historique",
+    "description": "Le cœur de Reus, autour de la Plaça del Mercadal et de ses rues commerçantes. On y trouve des appartements dans des immeubles anciens, des bâtiments modernistes et de nombreux commerces, restaurants et services accessibles à pied."
+  },
+  {
+    "nom": "Secteur de la gare",
+    "description": "Les environs de la gare ferroviaire offrent un accès pratique aux trains régionaux. Ce secteur peut intéresser les acheteurs souhaitant se déplacer sans utiliser systématiquement leur voiture."
+  },
+  {
+    "nom": "Barri Gaudí",
+    "description": "Un quartier résidentiel connu notamment pour ses immeubles conçus par l'architecte Ricardo Bofill. Il propose principalement des appartements et dispose de commerces et de services de proximité."
+  },
+  {
+    "nom": "Urbanisation Sant Joan",
+    "description": "Un secteur résidentiel de Reus où l'on trouve notamment des maisons individuelles avec jardin. Une possibilité pour les acheteurs qui privilégient l'espace et un environnement moins central."
+  }
+]
+
   },
   {
     "nom": "Tarragone",
+    "image": "/images/tarragone.jpg",
     "type": "ville",
     "mer": 0,
     "animation": "toute_annee",
@@ -169,10 +336,31 @@
     "prixM2": 2100,
     "anneePrix": 2026,
     "sourcePrix": "Idealista - août 2026",
-    "description": "Ville historique en bord de mer, avec de nombreux services."
+    "description": "Ville historique en bord de mer, avec de nombreux services.",
+    
+"quartiers": [
+  {
+    "nom": "Part Alta — Centre historique",
+    "description": "Le cœur historique de Tarragone, avec ses ruelles médiévales, ses places, sa cathédrale et ses vestiges romains. On y trouve principalement des appartements dans des immeubles anciens. Un secteur plein de caractère, où il faut vérifier l'état des bâtiments et les possibilités de stationnement."
+  },
+  {
+    "nom": "Eixample — Centre-ville",
+    "description": "Le centre moderne de Tarragone, autour de la Rambla Nova et de ses rues commerçantes. Ce secteur offre de nombreux commerces, restaurants et services accessibles à pied. Il propose principalement des appartements et convient aussi bien à une résidence principale qu'à un pied-à-terre."
+  },
+  {
+    "nom": "Part Baixa — Quartier du port",
+    "description": "Le secteur situé entre le centre-ville et le port, notamment autour du quartier maritime du Serrallo. On y trouve des appartements, des commerces et des restaurants. Avant un achat, il est utile de vérifier l'état de l'immeuble et l'environnement immédiat."
+  },
+  {
+    "nom": "Llevant — Quartiers proches des plages",
+    "description": "Les secteurs résidentiels situés à l'est de Tarragone, notamment vers la Vall de l'Arrabassada, la Savinosa et Cala Romana. On y trouve des appartements et des maisons, parfois avec terrasse, jardin ou vue sur la mer. La voiture peut être utile selon l'emplacement."
+  }
+]
+
   },
   {
     "nom": "Pratdip",
+"image": "/images/pratdip.jpg",
     "type": "village",
     "mer": 20,
     "animation": "calme",
@@ -185,13 +373,35 @@
   "Villa avec piscine"
 ],
   
-     "prixM2": null,
-   "anneePrix": null,
-    "description": "Village de caractère entouré de montagnes, adapté aux amateurs de tranquillité."
+   "prixM2": 1481,
+"anneePrix": 2026,
+"sourcePrix": "Fotocasa - septembre 2026",
+    "description": "Village de caractère entouré de montagnes, adapté aux amateurs de tranquillité.",
+    
+"quartiers": [
+  {
+    "nom": "Centre historique",
+    "description": "Le cœur ancien de Pratdip, avec ses ruelles étroites, ses maisons traditionnelles en pierre et son ambiance de village catalan. Un secteur intéressant pour les amateurs de maisons de caractère, où il faut vérifier l'accessibilité, le stationnement et l'état du bâti."
+  },
+  {
+    "nom": "Abords du village",
+    "description": "Les secteurs situés autour du centre historique offrent un environnement résidentiel, avec notamment des maisons individuelles et des espaces extérieurs. Ils permettent de profiter du calme tout en restant à proximité du village."
+  },
+  {
+    "nom": "Urbanisation Planes del Rei",
+    "description": "Une urbanisation résidentielle située à l'écart du centre de Pratdip, composée principalement de maisons individuelles, souvent avec jardin ou piscine. Avant un achat, il est important de vérifier les charges éventuelles, les services disponibles et la situation urbanistique du bien."
+  },
+  {
+    "nom": "Environs ruraux et montagne",
+    "description": "Les espaces naturels autour de Pratdip, au pied des montagnes de la Serra de Llaberia, offrent un cadre paisible avec des propriétés rurales et des maisons isolées. Il convient de vérifier les accès, les raccordements, les règles d'urbanisme et les risques naturels."
+  }
+]
+
   },
 
 {
   "nom": "Altafulla",
+  "image": "/images/altafulla.jpg",
   "type": "village",
   "mer": 0,
   "animation": "toute_annee",
@@ -205,10 +415,31 @@
   "prixM2": 2969,
 "anneePrix": 2026,
 "sourcePrix": "Idealista - juillet 2026",
-  "description": "Village historique en bord de mer, avec une plage, une gare et des commerces."
+  "description": "Village historique en bord de mer, avec une plage, une gare et des commerces.",
+  
+"quartiers": [
+  {
+    "nom": "Vila Closa — Centre historique",
+    "description": "Le cœur médiéval d'Altafulla, avec ses ruelles pavées, son château et ses maisons traditionnelles. Un secteur plein de caractère pour les amateurs de maisons anciennes. Il est conseillé de vérifier l'état du bâti et les possibilités de stationnement."
+  },
+  {
+    "nom": "Baix a Mar — Quartier maritime",
+    "description": "L'ancien quartier des pêcheurs, situé directement en bord de mer. On y trouve des maisons traditionnelles et des appartements à proximité immédiate de la plage, des restaurants et de la promenade maritime. L'animation est plus importante en été."
+  },
+  {
+    "nom": "Secteurs résidentiels du village",
+    "description": "Les quartiers situés autour du centre historique proposent notamment des appartements et des maisons individuelles. Ils permettent de profiter des commerces et des services du village dans un environnement résidentiel."
+  },
+  {
+    "nom": "Urbanisations et périphérie",
+    "description": "Les secteurs en retrait du centre et du front de mer comprennent notamment des maisons avec jardin et des résidences plus récentes. Selon l'emplacement, la voiture peut être utile pour rejoindre les plages et les commerces."
+  }
+]
+
 },
 {
   "nom": "Torredembarra",
+  "image": "/images/torredembarra.jpg",
   "type": "ville",
   "mer": 0,
   "animation": "toute_annee",
@@ -222,11 +453,32 @@
   "prixM2": 2399,
 "anneePrix": 2026,
 "sourcePrix": "Idealista - août 2026",
-  "description": "Ville côtière avec de longues plages, un centre historique et des services à l'année."
+  "description": "Ville côtière avec de longues plages, un centre historique et des services à l'année.",
+  
+"quartiers": [
+  {
+    "nom": "Centre historique",
+    "description": "Le cœur ancien de Torredembarra, autour du château et de ses rues commerçantes. On y trouve des maisons de village et des appartements dans des immeubles anciens. Un secteur intéressant pour vivre à l'année, avec des commerces et des services accessibles à pied."
+  },
+  {
+    "nom": "Baix a Mar — Quartier maritime",
+    "description": "L'ancien quartier des pêcheurs, situé près de la plage et de la promenade maritime. Il propose notamment des appartements et des maisons traditionnelles. Un emplacement intéressant pour une résidence secondaire, avec une animation plus importante en été."
+  },
+  {
+    "nom": "Els Muntanyans — Secteur littoral",
+    "description": "Le secteur situé à proximité de la grande plage et de l'espace naturel protégé des Muntanyans. Il offre un environnement maritime avec des résidences de vacances. Avant un achat, il est particulièrement important de consulter les cartes officielles des risques d'inondation."
+  },
+  {
+    "nom": "Sant Jordi et quartiers résidentiels",
+    "description": "Les secteurs résidentiels situés en retrait du front de mer proposent des appartements et des maisons individuelles, parfois avec jardin. Ils permettent de profiter des services de Torredembarra tout en s'éloignant de l'animation touristique du littoral."
+  }
+]
+
 },
 
 {
   "nom": "L'Ametlla de Mar",
+  "image": "/images/ametlla-de-mar.jpg",
   "type": "petite_ville",
   "mer": 0,
   "animation": "toute_annee",
@@ -244,6 +496,7 @@
 },
 {
   "nom": "L'Ampolla",
+  "image": "/images/ampolla.jpg",
   "type": "petite_ville",
   "mer": 0,
   "animation": "toute_annee",
@@ -258,7 +511,364 @@
 "anneePrix": 2026,
 "sourcePrix": "Idealista - août 2026",
   "description": "Petite ville méditerranéenne avec un port de plaisance, des plages et un accès au delta de l'Èbre."
+},
+{
+  "nom": "Creixell",
+  "image": "/images/creixell.jpg",
+  "type": "village",
+  "mer": 0,
+  "animation": "saisonniere",
+  "commerces": true,
+  "gare": false,
+  "typesBiens": [
+    "Appartement",
+    "Maison individuelle",
+    "Villa avec piscine"
+  ],
+  "prixM2": 1975,
+  "anneePrix": 2026,
+  "sourcePrix": "Idealista - août 2026",
+  "description": "Village historique de la Costa Daurada, avec des plages et des quartiers résidentiels.",
+  
+"quartiers": [
+  {
+    "nom": "Centre historique",
+    "description": "Le cœur ancien de Creixell, avec ses ruelles, son château et ses maisons traditionnelles. Un secteur à découvrir pour les acheteurs qui apprécient l'ambiance d'un village catalan. Il est conseillé de vérifier l'état du bâti et les possibilités de stationnement."
+  },
+  {
+    "nom": "Creixell Platja",
+    "description": "Le secteur littoral de Creixell, avec sa longue plage de sable et ses résidences de vacances. On y trouve notamment des appartements et des maisons à proximité de la mer. La fréquentation augmente pendant la saison estivale."
+  },
+  {
+    "nom": "Urbanisations résidentielles",
+    "description": "Les secteurs résidentiels situés entre le village et le littoral proposent principalement des maisons individuelles, parfois avec jardin ou piscine. Il est utile de vérifier les distances réelles jusqu'aux commerces et à la plage."
+  },
+  {
+    "nom": "Périphérie et environs ruraux",
+    "description": "Les secteurs en retrait du centre offrent un environnement moins dense, avec quelques propriétés et maisons individuelles. Avant un achat, il convient de vérifier les accès, les raccordements et la situation urbanistique du bien."
+  }
+]
+
+},
+{
+  "nom": "Roda de Berà",
+  "image": "/images/roda-de-bera.jpg",
+  "type": "village",
+  "mer": 0,
+  "animation": "saisonniere",
+  "commerces": true,
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison individuelle",
+    "Villa avec piscine"
+  ],
+  "prixM2": 2084,
+  "anneePrix": 2026,
+  "sourcePrix": "Idealista - août 2026",
+  "description": "Commune côtière connue pour ses plages, son village historique et Roc de Sant Gaietà.",
+  
+"quartiers": [
+  {
+    "nom": "Centre historique",
+    "description": "Le cœur ancien de Roda de Berà, situé à l'intérieur des terres, avec ses commerces, ses services et ses maisons de village. Un secteur à découvrir pour ceux qui recherchent une vie locale à l'année, à quelques kilomètres des plages."
+  },
+  {
+    "nom": "Roc de Sant Gaietà",
+    "description": "Un ensemble architectural pittoresque en bord de mer, connu pour ses ruelles, ses patios et son ambiance méditerranéenne. Un secteur touristique très apprécié, où les biens immobiliers sont particuliers et relativement rares."
+  },
+  {
+    "nom": "La Barquera et les plages",
+    "description": "Les secteurs résidentiels proches du littoral, avec des appartements et des maisons de vacances. Ils permettent de profiter des plages et des promenades en bord de mer, avec une fréquentation plus importante en été."
+  },
+  {
+    "nom": "Urbanisations résidentielles",
+    "description": "Les quartiers de maisons individuelles situés entre le centre du village et le littoral, parfois avec jardin ou piscine. Il est conseillé de vérifier la proximité des commerces, les possibilités de transport et les charges éventuelles."
+  }
+]
+
+},
+
+{
+  "nom": "Calafell",
+  "image": "/images/calafell.jpg",
+  "type": "cote",
+  "mer": 0,
+  "animation": "animee",
+  "commerces": "nombreux",
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison de village",
+    "Villa"
+  ],
+  
+"prixM2": 2428,
+"anneePrix": 2026,
+"sourcePrix": "Idealista — août 2026",
+
+  "description": "Calafell est une commune de la Costa Daurada qui réunit un centre historique, une station balnéaire et le secteur de Segur de Calafell. Elle offre de longues plages de sable, des commerces et des liaisons ferroviaires vers Barcelone. On y trouve aussi bien des appartements en bord de mer que des maisons dans les quartiers résidentiels.",
+  "quartiers": [
+    {
+      "nom": "Calafell Poble — Centre historique",
+      "description": "Le village ancien, dominé par son château médiéval, avec des maisons traditionnelles et des commerces de proximité."
+    },
+    {
+      "nom": "Calafell Platja — Quartier maritime",
+      "description": "La station balnéaire, avec sa grande plage, sa promenade maritime, ses restaurants et de nombreux appartements."
+    },
+    {
+      "nom": "Segur de Calafell",
+      "description": "Un secteur côtier disposant de sa propre gare, d'un port de plaisance et de plages. On y trouve des appartements et des maisons."
+    },
+    {
+      "nom": "Mas Mel et les urbanisations",
+      "description": "Des secteurs résidentiels comprenant notamment des maisons avec jardin, parfois avec piscine."
+    }
+  ]
+},
+
+{
+  "nom": "El Vendrell",
+  "image": "/images/el-vendrell.jpg",
+  "type": "cote",
+  "mer": 3,
+  "animation": "animee",
+  "commerces": "nombreux",
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison de village",
+    "Villa"
+  ],
+  
+"prixM2": 1995,
+"anneePrix": 2026,
+"sourcePrix": "Idealista — août 2026",
+
+  "description": "El Vendrell est une commune de la Costa Daurada qui associe une ville catalane animée à plusieurs quartiers maritimes. Son centre historique dispose de nombreux commerces et services, tandis que Coma-ruga et Sant Salvador offrent de longues plages de sable. La commune peut intéresser aussi bien les acheteurs recherchant une résidence principale que ceux qui souhaitent une résidence secondaire près de la mer.",
+  "quartiers": [
+    {
+      "nom": "Centre historique d'El Vendrell",
+      "description": "Le cœur de la ville, avec ses rues commerçantes, ses places, son marché et ses services. On y trouve principalement des appartements et des maisons de ville. Un secteur pratique pour vivre à l'année."
+    },
+    {
+      "nom": "Coma-ruga",
+      "description": "Une station balnéaire avec une longue plage de sable, une promenade maritime, des restaurants et une gare ferroviaire. On y trouve de nombreux appartements et des maisons de vacances."
+    },
+    {
+      "nom": "Sant Salvador",
+      "description": "Un quartier maritime connu pour sa plage et la maison-musée du violoncelliste Pau Casals. Il propose des appartements et des maisons à proximité de la mer, dans un environnement résidentiel et touristique."
+    },
+    {
+      "nom": "El Francàs et les secteurs résidentiels",
+      "description": "El Francàs est un secteur littoral situé à proximité de Coma-ruga. Les autres zones résidentielles de la commune proposent notamment des maisons avec jardin. Selon l'emplacement, une voiture peut être nécessaire pour rejoindre les commerces."
+    }
+  ]
+},
+
+{
+  "nom": "Cunit",
+  "image": "/images/cunit.jpg",
+  "type": "cote",
+  "mer": 0,
+  "animation": "animee",
+  "commerces": "nombreux",
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison",
+    "Villa"
+  ],
+ 
+"prixM2": 2306,
+"anneePrix": 2026,
+"sourcePrix": "Idealista — août 2026",
+
+  "description": "Cunit est une commune côtière située entre Calafell et Cubelles, au nord de la Costa Daurada. Elle possède de longues plages de sable, une promenade maritime, des commerces et une gare permettant de rejoindre Barcelone. Elle propose des appartements proches de la mer ainsi que des maisons dans ses quartiers résidentiels.",
+  "quartiers": [
+    {
+      "nom": "Centre-ville",
+      "description": "Le cœur de Cunit, avec ses commerces, ses services et sa gare ferroviaire. On y trouve principalement des appartements et des maisons de ville. Un secteur pratique pour vivre à l'année et se déplacer en train."
+    },
+    {
+      "nom": "Front de mer et Cunit Platja",
+      "description": "Les secteurs situés à proximité des plages et de la promenade maritime, avec de nombreux appartements et des résidences de vacances. L'animation est plus importante pendant la saison estivale."
+    },
+    {
+      "nom": "Can Toni et quartiers résidentiels",
+      "description": "Des secteurs résidentiels comprenant des maisons individuelles et des appartements, parfois avec jardin ou terrasse. Il est utile de vérifier la distance réelle jusqu'à la gare, aux commerces et aux plages."
+    },
+    {
+      "nom": "Urbanisations en hauteur",
+      "description": "Les secteurs résidentiels situés dans les collines en retrait du littoral proposent notamment des maisons avec jardin et parfois une vue sur la mer. La voiture est généralement nécessaire et il convient de vérifier les accès ainsi que les risques naturels."
+    }
+  ]
+},
+
+{
+  "nom": "Cubelles",
+  "image": "/images/cubelles.jpg",
+  "type": "cote",
+  "mer": 0,
+  "animation": "moderee",
+  "commerces": "nombreux",
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison de village",
+    "Villa"
+  ],
+  
+"prixM2": 2733,
+"anneePrix": 2026,
+"sourcePrix": "Idealista — août 2026",
+
+  "description": "Cubelles est une commune côtière située entre Cunit et Vilanova i la Geltrú, dans la province de Barcelone. Elle possède un centre historique, des plages de sable et une gare ferroviaire. Elle peut intéresser les acheteurs recherchant une résidence principale ou secondaire dans un environnement résidentiel proche de la Méditerranée.",
+  "quartiers": [
+    {
+      "nom": "Centre historique",
+      "description": "Le cœur ancien de Cubelles, avec ses ruelles, son château, ses commerces et ses services de proximité. On y trouve notamment des maisons de village et des appartements. Un secteur pratique pour profiter de la vie locale à l'année."
+    },
+    {
+      "nom": "Les Salines — Front de mer",
+      "description": "Un secteur littoral situé à proximité des plages, avec des appartements et des résidences de vacances. Il permet de profiter de la promenade maritime et des activités balnéaires. Avant un achat, il est conseillé de vérifier les risques d'inondation à l'adresse précise."
+    },
+    {
+      "nom": "Marítim et Mota de Sant Pere",
+      "description": "Des secteurs résidentiels proches du littoral, proposant notamment des appartements et des maisons. Leur situation permet de rejoindre les plages et, selon l'emplacement, la gare et les commerces."
+    },
+    {
+      "nom": "Mas Trader et les urbanisations",
+      "description": "Des secteurs résidentiels situés dans les collines en retrait du littoral, avec principalement des maisons individuelles, parfois avec jardin ou piscine. La voiture est généralement nécessaire pour rejoindre le centre et les plages."
+    }
+  ]
+},
+
+{
+  "nom": "Vila-seca",
+  "image": "/images/vila-seca.jpg",
+  "type": "ville",
+  "mer": 5,
+  "animation": "moderee",
+  "commerces": "nombreux",
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison de ville",
+    "Villa"
+  ],
+  
+"prixM2": 1875,
+"anneePrix": 2026,
+"sourcePrix": "Idealista — août 2026",
+
+  "description": "Vila-seca est une commune située à proximité de Cambrils, Salou et Tarragone. Son centre historique dispose de commerces, de services et d'une gare ferroviaire. La commune comprend également La Pineda, une station balnéaire dotée d'une grande plage. Elle offre des possibilités variées pour une résidence principale ou secondaire.",
+  "quartiers": [
+    {
+      "nom": "Centre historique",
+      "description": "Le cœur ancien de Vila-seca, avec ses rues traditionnelles, son château, ses commerces et ses services. On y trouve des maisons de ville et des appartements, dans un environnement adapté à la vie quotidienne."
+    },
+    {
+      "nom": "Quartiers résidentiels",
+      "description": "Les secteurs autour du centre proposent principalement des appartements et des maisons individuelles. Ils permettent de profiter des écoles, des commerces et des équipements de la commune."
+    },
+    {
+      "nom": "La Pineda",
+      "description": "Le secteur maritime de Vila-seca, avec sa grande plage de sable, sa promenade et ses résidences touristiques. On y trouve de nombreux appartements proches de la mer, avec une fréquentation plus importante en été."
+    },
+    {
+      "nom": "La Plana et les environs",
+      "description": "Les secteurs situés en retrait du centre et du littoral offrent un environnement moins dense. Avant un achat, il est utile de vérifier les distances jusqu'aux services, les accès et la situation urbanistique du bien."
+    }
+  ]
+},
+
+{
+  "nom": "La Selva del Camp",
+  "image": "/images/selva-del-camp.jpg",
+  "type": "village",
+  "mer": 17,
+  "animation": "moderee",
+  "commerces": "proximite",
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison de village",
+    "Maison individuelle",
+    "Propriété rurale"
+  ],
+ 
+"prixM2": 1779,
+"anneePrix": 2026,
+"sourcePrix": "Fotocasa — août 2026",
+
+  "description": "La Selva del Camp est une commune du Baix Camp, située entre la plaine de Tarragone et les premiers reliefs de la Serra de la Mussara. Elle possède un centre historique médiéval, des commerces et une gare. Sa proximité avec Reus et Cambrils en fait une possibilité pour les acheteurs qui recherchent une vie de village à l'écart des stations balnéaires.",
+  "quartiers": [
+    {
+      "nom": "Centre historique",
+      "description": "Le cœur médiéval de La Selva del Camp, autour de la Plaça Major et du Carrer Major. On y trouve des maisons anciennes et des commerces de proximité. Avant un achat, il est utile de vérifier l'état du bâtiment et les possibilités de stationnement."
+    },
+    {
+      "nom": "Secteurs résidentiels",
+      "description": "Les quartiers situés autour du centre ancien proposent notamment des appartements et des maisons individuelles. Ils permettent de profiter des services de la commune dans un environnement résidentiel."
+    },
+    {
+      "nom": "Abords de la gare",
+      "description": "Les secteurs proches de la gare peuvent intéresser les acheteurs souhaitant utiliser le train pour leurs déplacements. Il convient de vérifier les horaires, la fréquence des dessertes et l'environnement immédiat du logement."
+    },
+    {
+      "nom": "Environs ruraux",
+      "description": "Les espaces agricoles et les secteurs situés vers les premiers reliefs de la Mussara offrent un cadre plus rural. Pour un achat, il faut vérifier les accès, les raccordements, les règles d'urbanisme et les risques naturels."
+    }
+  ]
+},
+
+{
+  "nom": "Vinyols i els Arcs",
+  "image": "/images/vinyols.jpg",
+  "type": "village",
+  "mer": 5,
+  "animation": "calme",
+  "commerces": "proximite",
+  "gare": false,
+  "typesBiens": [
+    "Maison de village",
+    "Maison individuelle",
+    "Villa",
+    "Propriété rurale"
+  ],
+ 
+"prixM2": 1563,
+"anneePrix": 2026,
+"sourcePrix": "Fotocasa — août 2026",
+
+  "description": "Vinyols i els Arcs est une commune du Baix Camp située à proximité immédiate de Cambrils. Elle associe un village catalan traditionnel à des secteurs résidentiels et agricoles. Sa situation permet de profiter d'un environnement plus rural tout en restant proche des plages et des services de Cambrils.",
+  "quartiers": [
+    {
+      "nom": "Centre historique",
+      "description": "Le cœur du village, avec ses ruelles traditionnelles, son église et ses maisons anciennes. Un secteur à découvrir pour les acheteurs qui apprécient l'ambiance d'un village catalan."
+    },
+    {
+      "nom": "Quartiers résidentiels",
+      "description": "Les secteurs situés autour du centre proposent notamment des maisons individuelles et des logements plus récents. Ils permettent de rester proches des services du village."
+    },
+    {
+      "nom": "Secteurs proches de Cambrils",
+      "description": "Les zones de la commune situées en direction de Cambrils offrent un accès pratique aux commerces, aux services et aux plages. Il est conseillé de vérifier les distances réelles selon l'emplacement du bien."
+    },
+    {
+      "nom": "Environs agricoles",
+      "description": "Les espaces ruraux autour du village comprennent des terres agricoles et des propriétés isolées. Avant un achat, il est important de vérifier les accès, les raccordements, les règles d'urbanisme et les risques naturels."
+    }
+  ]
 }
+
+
+
+
+
+
 
 
 

@@ -215,6 +215,35 @@ const questions = [
 }
 
 
+.site-footer {
+  margin-top: 60px;
+  padding: 35px 20px;
+  background: #263d46;
+  color: white;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0 0 18px;
+}
+
+.site-footer nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 25px;
+}
+
+.site-footer a {
+  color: #e7b65c;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
 
     </style>
   </head>
@@ -532,6 +561,17 @@ classement.sort((a, b) => {
 
 
 </script>
+
+<footer class="site-footer">
+  <p>© 2026 Ma Maison Costa Daurada</p>
+
+  <nav aria-label="Informations juridiques">
+    <a href="/mentions-legales/">Mentions légales</a>
+    <a href="/politique-confidentialite/">Confidentialité</a>
+    <a href="/politique-cookies/">Cookies</a>
+    <a href="/cgv/">CGV</a>
+  </nav>
+</footer>
 
 
   </body>
