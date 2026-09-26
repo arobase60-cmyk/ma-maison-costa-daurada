@@ -1,0 +1,300 @@
+
+---
+const title = "Mon histoire | Ma Maison Costa Daurada";
+const description =
+  "Découvrez pourquoi mon expérience personnelle en Espagne m'a donné envie d'aider les francophones à préparer leur achat immobilier sur la Costa Daurada.";
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link
+      rel="canonical"
+      href="https://ma-maison-costa-daurada.pages.dev/mon-histoire/"
+    />
+  </head>
+
+  <body>
+    <header class="hero">
+      <a href="/" class="retour">← Retour à l'accueil</a>
+
+      <div class="hero-content">
+        <p class="surtitre">UNE EXPÉRIENCE PERSONNELLE</p>
+        <h1>Pourquoi j'ai créé Ma Maison Costa Daurada</h1>
+        <p class="introduction">
+          De mon arrivée en Espagne à l'envie d'accompagner
+          ceux qui souhaitent, à leur tour, y acheter un bien.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="histoire">
+        <h2>Mon arrivée en Espagne</h2>
+
+        <p>
+          Lorsque je suis arrivé en Espagne il y a plusieurs années,
+          j'étais loin d'imaginer toutes les difficultés auxquelles
+          j'allais être confronté.
+        </p>
+
+        <p>
+          Entre les démarches administratives, les différences
+          de fonctionnement, la recherche de professionnels
+          et les imprévus, mon installation a été ponctuée
+          de nombreuses déconvenues.
+        </p>
+
+        <p>
+          Avec le recul, je me suis souvent dit qu'avoir
+          quelqu'un sur place pour me conseiller, m'orienter
+          et m'éviter certaines erreurs m'aurait fait gagner
+          un temps précieux et épargné bien des soucis.
+        </p>
+
+        <div class="citation">
+          « J'aurais aimé trouver quelqu'un qui connaisse
+          les difficultés que l'on peut rencontrer
+          lorsqu'on arrive en Espagne. »
+        </div>
+
+        <h2>Une expérience devenue un projet</h2>
+
+        <p>
+          C'est de cette expérience qu'est née l'idée
+          de Ma Maison Costa Daurada.
+        </p>
+
+        <p>
+          Au fil des années, j'ai appris à mieux connaître
+          la région, ses communes, son fonctionnement
+          et les différentes étapes qui accompagnent
+          un projet immobilier.
+        </p>
+
+        <p>
+          Aujourd'hui, je souhaite partager cette expérience
+          avec les francophones qui envisagent d'acheter
+          une résidence principale ou secondaire
+          sur la Costa Daurada.
+        </p>
+
+        <h2>Mon objectif : vous aider à éviter certaines erreurs</h2>
+
+        <p>
+          Chaque projet est différent. Certains recherchent
+          une maison proche de la mer, d'autres préfèrent
+          le calme d'un village de l'intérieur.
+          Mais tous ont besoin d'informations fiables
+          et de bons interlocuteurs.
+        </p>
+
+        <p>
+          Mon objectif est de vous aider à mieux préparer
+          votre projet, à découvrir les communes
+          qui correspondent à vos attentes
+          et à identifier les professionnels compétents
+          pour les différentes démarches.
+        </p>
+
+        <div class="engagement">
+          <h2>Un accompagnement fondé sur l'expérience</h2>
+
+          <p>
+            Je souhaite vous faire bénéficier de ce que
+            j'ai appris, afin que votre projet immobilier
+            en Espagne se déroule dans les meilleures
+            conditions possibles.
+          </p>
+
+          <p class="conclusion">
+            Parce qu'acheter une maison en Espagne
+            doit avant tout rester un beau projet.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2>Parlons de votre projet</h2>
+
+        <p>
+          Vous envisagez d'acheter un bien immobilier
+          sur la Costa Daurada ? Présentez-moi votre projet
+          et les communes qui vous intéressent.
+        </p>
+
+        <a href="/#contact" class="bouton">
+          Me contacter
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Ma Maison Costa Daurada</p>
+
+      <nav aria-label="Informations juridiques">
+        <a href="/mentions-legales/">Mentions légales</a>
+        <a href="/politique-confidentialite/">
+          Confidentialité
+        </a>
+        <a href="/politique-cookies/">Cookies</a>
+        <a href="/cgv/">CGV</a>
+      </nav>
+    </footer>
+  </body>
+</html>
+
+<style>
+  :global(body) {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #263d46;
+    line-height: 1.8;
+  }
+
+  .hero {
+    padding: 30px 25px 85px;
+    background: linear-gradient(135deg, #263d46, #397b80);
+    color: white;
+  }
+
+  .retour {
+    color: #f2cf8e;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .hero-content {
+    max-width: 900px;
+    margin: 65px auto 0;
+    text-align: center;
+  }
+
+  .surtitre {
+    color: #f2cf8e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    font-size: clamp(32px, 5vw, 50px);
+    line-height: 1.2;
+  }
+
+  .introduction {
+    max-width: 700px;
+    margin: 25px auto 0;
+    font-size: 19px;
+  }
+
+  .histoire {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 65px 25px;
+  }
+
+  .histoire h2 {
+    margin-top: 45px;
+    font-size: 29px;
+    line-height: 1.3;
+  }
+
+  .histoire p {
+    font-size: 17px;
+  }
+
+  .citation {
+    margin: 45px 0;
+    padding: 30px;
+    border-left: 5px solid #e7b65c;
+    background: #f4f8f8;
+    border-radius: 8px;
+    font-size: 21px;
+    font-style: italic;
+  }
+
+  .engagement {
+    margin-top: 55px;
+    padding: 35px;
+    background: #e8f2f1;
+    border-radius: 16px;
+  }
+
+  .engagement h2 {
+    margin-top: 0;
+  }
+
+  .conclusion {
+    font-weight: bold;
+    color: #237c80;
+  }
+
+  .contact {
+    padding: 65px 25px;
+    text-align: center;
+    background: #f4f8f8;
+  }
+
+  .contact p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+  }
+
+  .bouton {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #e7b65c;
+    color: #263d46;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .bouton:hover {
+    background: #f2cf8e;
+  }
+
+  .site-footer {
+    padding: 35px 20px;
+    background: #263d46;
+    color: white;
+    text-align: center;
+  }
+
+  .site-footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+    margin-top: 18px;
+  }
+
+  .site-footer a {
+    color: #e7b65c;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  @media (max-width: 650px) {
+    .hero {
+      padding-bottom: 55px;
+    }
+
+    .hero-content {
+      margin-top: 45px;
+    }
+
+    .histoire {
+      padding: 40px 20px;
+    }
+
+    .citation,
+    .engagement {
+      padding: 22px;
+    }
+  }
+</style>
