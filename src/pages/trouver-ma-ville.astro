@@ -1,0 +1,542 @@
+
+---
+
+import communes from "../data/communes.json";
+
+const questions = [
+  {
+    titre: "Quel est votre projet immobilier ?",
+    choix: [
+      "Résidence principale",
+      "Résidence secondaire",
+      "Préparer ma retraite",
+      "Investissement locatif"
+    ]
+  },
+  {
+    titre: "Quel est votre budget ?",
+    choix: [
+      "Moins de 100 000 €",
+      "100 000 à 150 000 €",
+      "150 000 à 200 000 €",
+      "200 000 à 300 000 €",
+      "300 000 à 450 000 €",
+      "Plus de 450 000 €"
+    ]
+  },
+  {
+    titre: "Quel environnement préférez-vous ?",
+    choix: [
+      "Ville animée toute l'année",
+      "Petite ville avec commerces",
+      "Village traditionnel",
+      "Quartier résidentiel calme",
+      "Station balnéaire"
+    ]
+  },
+  {
+    titre: "À quelle distance de la mer ?",
+    choix: [
+      "En bord de mer",
+      "Moins de 10 minutes",
+      "Moins de 20 minutes",
+      "Moins de 30 minutes",
+      "La mer n'est pas une priorité"
+    ]
+  },
+
+{
+  titre: "Quelle surface habitable recherchez-vous ?",
+  choix: [
+    "Moins de 50 m²",
+    "50 à 70 m²",
+    "70 à 90 m²",
+    "90 à 120 m²",
+    "120 à 150 m²",
+    "Plus de 150 m²",
+    "Je suis flexible"
+  ]
+},
+
+{
+  titre: "Quel type de bien recherchez-vous ?",
+  choix: [
+    "Appartement",
+    "Maison de village",
+    "Maison individuelle",
+    "Villa avec piscine",
+    "Maison à rénover",
+    "Indifférent"
+  ]
+}
+
+  
+
+
+
+];
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <title>Trouver ma ville | Ma Maison Costa Daurada</title>
+    <style is:global>
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #263d46;
+        background: #f5f8f7;
+      }
+
+      header {
+        background: white;
+        padding: 25px 8%;
+      }
+
+      header a {
+        color: #167b88;
+        font-size: 23px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      main {
+        max-width: 850px;
+        margin: 55px auto;
+        padding: 0 20px;
+      }
+
+      h1 { text-align: center; }
+
+      .intro {
+        text-align: center;
+        line-height: 1.7;
+        margin-bottom: 40px;
+      }
+
+      .question {
+        background: white;
+        padding: 30px;
+        margin-bottom: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px #0000000a;
+      }
+
+      .question h2 {
+        font-size: 21px;
+        color: #167b88;
+      }
+
+      .choix {
+        display: grid;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      label {
+        padding: 14px;
+        border: 1px solid #d5e1e0;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      label:hover {
+        background: #e9f3f2;
+      }
+
+      input { margin-right: 10px; }
+
+      button {
+        display: block;
+        margin: 35px auto;
+        padding: 17px 35px;
+        background: #e7b65c;
+        border: none;
+        border-radius: 8px;
+        color: #263d46;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+
+#resultat {
+  margin-top: 45px;
+}
+
+#resultat h2 {
+  text-align: center;
+  color: #167b88;
+  margin-bottom: 30px;
+}
+
+.resultats {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 280px), 1fr)
+  );
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.resultat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  border-top: 5px solid #167b88;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.resultat-card h3 {
+  color: #176b78;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.resultat-card p {
+  line-height: 1.6;
+  margin: 12px 0;
+}
+
+
+.commune-photo {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="/">Ma Maison Costa Daurada</a>
+    </header>
+
+    <main>
+      <h1>Trouvez votre ville idéale</h1>
+
+      <p class="intro">
+        Répondez à quelques questions pour découvrir
+        les communes de la Costa Daurada qui
+        correspondent à votre projet immobilier.
+      </p>
+
+      <form id="questionnaire">
+        {questions.map((question, index) => (
+          <section class="question">
+            <h2>{index + 1}. {question.titre}</h2>
+
+            <div class="choix">
+              {question.choix.map((choix) => (
+                <label>
+                  <input
+                    type="radio"
+                    name={`question-${index}`}
+                    value={choix}
+                    required
+                  />
+                  {choix}
+                </label>
+              ))}
+            </div>
+          </section>
+        ))}
+
+        <button type="submit">
+          Découvrir les villes
+        </button>
+      </form>
+
+      <section id="resultat" hidden>
+        <h2>Votre recherche est enregistrée</h2>
+        <p>
+          Nous allons bientôt ajouter les recommandations
+          personnalisées de communes.
+        </p>
+      </section>
+    </main>
+
+    
+
+<script>
+  import communes from "../data/communes.json";
+  
+const budgets: Record<string, number> = {
+  "Moins de 100 000 €": 100000,
+  "100 000 à 150 000 €": 150000,
+  "150 000 à 200 000 €": 200000,
+  "200 000 à 300 000 €": 300000,
+  "300 000 à 450 000 €": 450000,
+  "Plus de 450 000 €": 450000
+};
+
+const surfaces: Record<string, number> = {
+  "Moins de 50 m²": 45,
+  "50 à 70 m²": 60,
+  "70 à 90 m²": 80,
+  "90 à 120 m²": 105,
+  "120 à 150 m²": 135,
+  "Plus de 150 m²": 160
+};
+
+  const form = document.querySelector<HTMLFormElement>(
+    "#questionnaire"
+  );
+
+  const resultat = document.querySelector<HTMLElement>(
+    "#resultat"
+  );
+
+  form?.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const donnees = new FormData(form);
+
+    const environnement = donnees.get("question-2");
+    const mer = donnees.get("question-3");
+
+const budgetChoisi = String(
+  donnees.get("question-1") || ""
+);
+
+const surfaceChoisie = String(
+  donnees.get("question-4") || ""
+);
+
+const typeBien = String(
+  donnees.get("question-5") || ""
+);
+
+console.log("Type de bien recherché :", typeBien);
+
+const budget = budgets[budgetChoisi] ?? null;
+const surface = surfaces[surfaceChoisie] ?? null;
+
+const estimations = communes.map((commune) => {
+  const prix = commune.prixM2;
+
+  const coutEstime =
+    prix !== null && surface !== null
+      ? Math.round(prix * surface)
+      : null;
+
+  return {
+    nom: commune.nom,
+    coutEstime,
+    compatible:
+      coutEstime !== null && budget !== null
+        ? coutEstime <= budget
+        : null
+  };
+});
+
+console.table(estimations);
+
+    const classement = communes.map((commune) => {
+      let score = 0;
+
+  // Correspondance avec le type de logement recherché
+  if (
+    typeBien !== "Indifférent" &&
+    commune.typesBiens.includes(typeBien)
+  ) {
+    score += 3;
+  }
+
+      // Préférence pour le type d'environnement
+      if (
+        environnement === "Ville animée toute l'année" &&
+        commune.animation === "toute_annee"
+      ) score += 3;
+
+      if (
+        environnement === "Petite ville avec commerces" &&
+        commune.type === "petite_ville"
+      ) score += 3;
+
+      if (
+        environnement === "Village traditionnel" &&
+        commune.type === "village"
+      ) score += 3;
+
+      if (
+        environnement === "Quartier résidentiel calme" &&
+        commune.type === "residentiel"
+      ) score += 3;
+
+      if (
+        environnement === "Station balnéaire" &&
+        commune.type === "station"
+      ) score += 3;
+
+      // Préférence pour la proximité de la mer
+      
+      if (
+        mer === "Moins de 20 minutes" &&
+        commune.mer <= 20
+      ) score += 2;
+
+      if (
+        mer === "Moins de 30 minutes" &&
+        commune.mer <= 30
+      ) score += 2;
+
+     
+const prix = commune.prixM2;
+
+const coutEstime =
+  prix !== null && surface !== null
+    ? Math.round(prix * surface)
+    : null;
+
+return {
+  ...commune,
+  score,
+  coutEstime,
+  compatible:
+    coutEstime !== null && budget !== null
+      ? coutEstime <= budget
+      : null
+};
+
+    });
+
+    
+classement.sort((a, b) => {
+  // Une commune compatible avec le budget
+  // bénéficie d'un bonus.
+  const bonusA =
+    a.compatible === true ? 3 : 0;
+
+  const bonusB =
+    b.compatible === true ? 3 : 0;
+
+  // Une commune dépassant le budget
+  // reçoit une pénalité.
+  const penaliteA =
+    a.compatible === false ? 4 : 0;
+
+  const penaliteB =
+    b.compatible === false ? 4 : 0;
+
+  const scoreA = a.score + bonusA - penaliteA;
+  const scoreB = b.score + bonusB - penaliteB;
+
+  return scoreB - scoreA;
+});
+
+
+    const selection = classement.slice(0, 3);
+
+    if (resultat) {
+      resultat.hidden = false;
+
+      resultat.innerHTML = `
+        <h2>Les communes correspondant à votre recherche</h2>
+
+        <div class="resultats">
+          ${selection.map((commune) => `
+            
+<article class="resultat-card">
+  ${commune.image
+    ? `<img
+        src="${commune.image}"
+        alt="Vue de ${commune.nom}"
+        class="commune-photo"
+        loading="lazy"
+      />`
+    : ""}
+
+  <h3>${commune.nom}</h3>
+
+             
+             
+              <p>${commune.description}</p>
+              
+  
+<p>
+  <strong>Distance de la mer :</strong>
+  ${commune.mer === 0
+    ? "En bord de mer"
+    : "Environ " + commune.mer + " minutes"}
+</p>
+
+  
+              
+<p>
+  <strong>Prix moyen au m² :</strong>
+  ${commune.prixM2 !== null
+    ? commune.prixM2.toLocaleString("fr-FR", {
+        style: "currency",
+        currency: "EUR"
+      })
+    : "Données à compléter"}
+</p>
+
+
+<p>
+  <strong>Coût estimé :</strong>
+  ${commune.coutEstime !== null
+    ? commune.coutEstime.toLocaleString("fr-FR", {
+        style: "currency",
+        currency: "EUR",
+        maximumFractionDigits: 0
+      })
+    : "Estimation indisponible"}
+</p>
+
+<p>
+  <strong>Budget :</strong>
+  ${commune.compatible === null
+    ? "À vérifier"
+    : commune.compatible
+      ? "Compatible avec votre budget estimé"
+      : "Supérieur à votre budget estimé"}
+</p>
+
+               
+              </p>
+
+
+<a
+  href="/communes/${commune.nom.toLowerCase()
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "")
+  .replace(/[^a-z0-9]+/g, "-")
+  .replace(/^-|-$/g, "")}/"
+  class="bouton-decouvrir"
+>
+  Découvrir cette commune →
+</a>
+
+ 
+
+            </article>
+          `).join("")}
+        </div>
+      `;
+
+      resultat.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  });
+
+
+</script>
+
+
+  </body>
+</html>

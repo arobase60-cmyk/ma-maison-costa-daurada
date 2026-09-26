@@ -1,11 +1,476 @@
----
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+const services = [
+  {
+    titre: "Recherche immobilière",
+    description: "Nous vous accompagnons dans la recherche de votre maison ou appartement sur la Costa Daurada."
+  },
+  {
+    titre: "Artisans et rénovation",
+    description: "Nous vous aidons à trouver des artisans locaux et à organiser vos travaux."
+  },
+  {
+    titre: "Démarches administratives",
+    description: "Un accompagnement francophone pour faciliter vos démarches et votre installation en Espagne."
+  }
+];
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ma Maison Costa Daurada</title>
+    <meta name="description" content="Accompagnement francophone pour acheter et rénover votre maison sur la Costa Daurada en Espagne." />
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #263d46;
+        background: #faf9f6;
+      }
+      header {
+        background: white;
+        padding: 22px 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        color: #167b88;
+        font-size: 23px;
+        font-weight: bold;
+      }
+      nav a {
+        color: #263d46;
+        text-decoration: none;
+        margin-left: 24px;
+      }
+      
+.hero {
+  min-height: 520px;
+  background:
+    linear-gradient(
+      rgba(13, 53, 67, 0.58),
+      rgba(13, 53, 67, 0.48)
+    ),
+    url("/images/cambrils.jpg")
+      center / cover no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  text-align: center;
+  padding: 90px 25px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 58px);
+  max-width: 900px;
+  margin: 0 auto;
+  text-shadow: 0 2px 12px #0005;
+}
+
+.hero p {
+  font-size: 21px;
+  max-width: 720px;
+  margin: 28px auto;
+  line-height: 1.6;
+}
+
+      h1 { font-size: clamp(34px, 5vw, 54px); }
+      .hero p {
+        font-size: 21px;
+        max-width: 720px;
+        margin: 25px auto;
+        line-height: 1.6;
+      }
+      .btn {
+        display: inline-block;
+        background: #edbc65;
+        color: #263d46;
+        padding: 16px 28px;
+        border-radius: 7px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+section {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 70px 5%;
+}
+  
+      h2 {
+        text-align: center;
+        font-size: 34px;
+      }
+      
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px #00000010;
+}
+
+.card h3 {
+  color: #167b88;
+  font-size: 22px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+  
+      .zone p { line-height: 1.8; }
+      footer {
+        background: #263d46;
+        color: white;
+        padding: 35px;
+        text-align: center;
+      }
+      @media(max-width: 700px) {
+        header {
+          flex-direction: column;
+          gap: 20px;
+        }
+        nav a { margin: 0 8px; }
+      }
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #176b80;
+}
+
+/* Formulaire de contact */
+
+#contact {
+  max-width: 750px;
+  margin: 70px auto;
+  padding: 30px;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #176b78;
+  margin-bottom: 25px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 35px;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+#contact label {
+  display: block;
+  padding: 0;
+  border: none;
+  font-weight: 600;
+  color: #263d46;
+}
+
+#contact input,
+#contact select,
+#contact textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #d5e1e0;
+  border-radius: 8px;
+  font: inherit;
+  background: white;
+}
+
+#contact button {
+  width: 100%;
+  margin: 15px 0 0;
+  background: #e7b65c;
+  color: #263d46;
+}
+
+@media (max-width: 600px) {
+  #contact {
+    padding: 15px;
+  }
+
+  #contact form {
+    padding: 20px;
+  }
+}
+
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">Ma Maison Costa Daurada</div>
+      <nav>
+        <a href="#services">Nos services</a>
+        <a href="#zone">Notre secteur</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>Votre maison sur la Costa Daurada</h1>
+        <p>
+          Vous rêvez d'acheter une maison ou un appartement
+          en Espagne ? Nous vous accompagnons dans votre
+          projet, de la recherche à votre installation.
+        </p>
+        
+<div class="hero-buttons">
+  <a class="btn" href="/trouver-ma-ville/">
+    Trouver ma ville
+  </a>
+
+  <a class="btn btn-outline" href="#contact">
+    Parlons de votre projet
+  </a>
+</div>
+
+      </div>
+
+      <section id="services">
+        <h2>Un accompagnement personnalisé</h2>
+        <div class="cards">
+          {services.map((service) => (
+            <article class="card">
+              <h3>{service.titre}</h3>
+              <p>{service.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="zone" class="zone">
+        <h2>Notre secteur : la Costa Daurada</h2>
+        <p>
+          Cambrils, Salou, Miami Platja, Mont-roig del Camp,
+          Reus, Tarragone et les villages environnants.
+        </p>
+      </section>
+
+     
+<section id="contact">
+  <h2>Parlons de votre projet immobilier</h2>
+
+  <p style="text-align:center">
+    Vous souhaitez acheter sur la Costa Daurada ?
+    Décrivez-nous votre projet.
+  </p>
+
+  
+<form id="contact-form">
+  <input
+    type="hidden"
+    name="access_key"
+    value="a0a0febb-9a1c-4ab2-84c1-26526b911b94"
+  />
+
+  <input
+    type="hidden"
+    name="subject"
+    value="Nouvelle demande - Ma Maison Costa Daurada"
+  />
+
+  <input
+    type="hidden"
+    name="from_name"
+    value="Ma Maison Costa Daurada"
+  />
+
+    <label for="nom">Votre nom</label>
+    <input
+      type="text"
+      id="nom"
+      name="nom"
+      required
+    />
+
+    <label for="email">Votre adresse e-mail</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+    />
+
+    <label for="commune">Commune recherchée</label>
+    <input
+      type="text"
+      id="commune"
+      name="commune"
+      placeholder="Ex. : Salou, Cambrils..."
+    />
+
+    <label for="projet">Votre projet</label>
+    <select id="projet" name="projet">
+      <option value="residence-secondaire">
+        Résidence secondaire
+      </option>
+      <option value="residence-principale">
+        Résidence principale
+      </option>
+      <option value="investissement">
+        Investissement locatif
+      </option>
+      <option value="renovation">
+        Rénovation
+      </option>
+      <option value="autre">
+        Autre projet
+      </option>
+    </select>
+
+    <label for="message">Votre message</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="5"
+      placeholder="Parlez-nous de votre recherche, de votre budget..."
+    ></textarea>
+
+    <button type="submit">
+      Envoyer ma demande
+    </button>
+  </form>
+<p
+  id="contact-message"
+  style="
+    display: none;
+    text-align: center;
+    margin-top: 25px;
+    padding: 20px;
+    background: #e9f7ef;
+    color: #176b48;
+    border-radius: 10px;
+    font-weight: bold;
+  "
+>
+  Merci ! Votre demande a bien été envoyée.
+  Nous vous répondrons prochainement.
+</p>
+
+
+</section>
+
+    </main>
+
+    <footer>
+      © {new Date().getFullYear()} Ma Maison Costa Daurada
+    </footer>
+    <script>
+  const contactForm = document.querySelector<HTMLFormElement>(
+    "#contact-form"
+  );
+
+  const contactMessage = document.querySelector<HTMLElement>(
+    "#contact-message"
+  );
+
+  contactForm?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (!contactMessage) return;
+
+    const bouton = contactForm.querySelector<HTMLButtonElement>(
+      'button[type="submit"]'
+    );
+
+    contactMessage.style.display = "none";
+
+    if (bouton) {
+      bouton.disabled = true;
+      bouton.textContent = "Envoi en cours...";
+    }
+
+    try {
+      const reponse = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+          method: "POST",
+          body: new FormData(contactForm)
+        }
+      );
+
+      const resultat = await reponse.json();
+
+      if (!reponse.ok || !resultat.success) {
+        throw new Error("Échec de l'envoi");
+      }
+
+      contactMessage.textContent =
+        "Merci ! Votre demande a bien été envoyée. Nous vous répondrons prochainement.";
+      contactMessage.style.display = "block";
+
+      contactForm.reset();
+    } catch {
+      contactMessage.textContent =
+        "Une erreur est survenue. Veuillez réessayer.";
+      contactMessage.style.display = "block";
+    } finally {
+      if (bouton) {
+        bouton.disabled = false;
+        bouton.textContent = "Envoyer ma demande";
+      }
+    }
+  });
+</script>
+  </body>
+</html>
+  
+<script>
+  // Récupérer la commune depuis l'adresse URL
+  const params = new URLSearchParams(window.location.search);
+  const communeRecherchee = params.get("commune");
+
+  // Remplir automatiquement le champ
+  const champCommune = document.getElementById("commune");
+
+  if (champCommune instanceof HTMLInputElement && communeRecherchee) {
+    champCommune.value = communeRecherchee;
+  }
+</script>

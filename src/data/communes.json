@@ -1,0 +1,187 @@
+
+[
+  {
+    "nom": "Cambrils",
+    "image": "/images/cambrils.jpg",
+    "type": "ville",
+    "mer": 0,
+    "animation": "toute_annee",
+    "commerces": true,
+    "gare": true,
+    
+"typesBiens": [
+  "Appartement",
+  "Maison individuelle",
+  "Villa avec piscine"
+],
+  
+    "prixM2": 2378.66,
+   "anneePrix": 2026,
+    "description": "Ville côtière avec un port, des plages et des commerces ouverts toute l'année."
+  },
+  {
+    "nom": "Salou", 
+"image": "/images/salou.jpg",
+    "type": "station",
+    "mer": 0,
+    "animation": "touristique",
+    "commerces": true,
+    "gare": false,
+    
+"typesBiens": [
+  "Appartement",
+  "Maison individuelle",
+  "Villa avec piscine"
+],
+  
+     "prixM2": 2422.11,
+   "anneePrix": 2026,
+    "description": "Station balnéaire animée, avec de nombreux appartements de vacances."
+  },
+  {
+    "nom": "Miami Platja",
+    "type": "residentiel",
+    "mer": 0,
+    "animation": "saisonniere",
+    "commerces": true,
+    "gare": false,
+    
+"typesBiens": [
+  "Appartement",
+  "Maison individuelle",
+  "Villa avec piscine"
+],
+  
+     "prixM2": null,
+   "anneePrix": null,
+    "description": "Secteur résidentiel avec des plages, des criques et des maisons individuelles."
+  },
+  {
+    "nom": "L'Hospitalet de l'Infant",
+    "type": "petite_ville",
+    "mer": 0,
+    "animation": "toute_annee",
+    "commerces": true,
+    "gare": true,
+    
+"typesBiens": [
+  "Appartement",
+  "Maison individuelle",
+  "Villa avec piscine"
+],
+  
+     "prixM2": null,
+   "anneePrix": null,
+    "description": "Petite ville côtière avec un port de plaisance et des services à l'année."
+  },
+  {
+    "nom": "Mont-roig del Camp",
+"image": "/images/mont-roig.jpg",
+    "type": "village",
+    "mer": 10,
+    "animation": "calme",
+    "commerces": true,
+    "gare": false,
+    
+"typesBiens": [
+  "Appartement",
+  "Maison individuelle",
+  "Villa avec piscine"
+],
+  
+     "prixM2": null,
+   "anneePrix": null,
+    "description": "Village traditionnel proche de la mer, avec des maisons anciennes."
+  },
+  {
+    "nom": "Montbrió del Camp",
+    "type": "village",
+    "mer": 15,
+    "animation": "calme",
+    "commerces": true,
+    "gare": false,
+    
+"typesBiens": [
+  "Appartement",
+  "Maison individuelle",
+  "Villa avec piscine"
+],
+  
+     "prixM2": null,
+   "anneePrix": null,
+    "description": "Village catalan situé à quelques kilomètres de Cambrils."
+  },
+  {
+    "nom": "Riudoms",
+    "type": "village",
+    "mer": 15,
+    "animation": "toute_annee",
+    "commerces": true,
+    "gare": false,
+    
+"typesBiens": [
+  "Appartement",
+  "Maison individuelle",
+  "Villa avec piscine"
+],
+  
+     "prixM2": null,
+   "anneePrix": null,
+    "description": "Commune de l'intérieur avec des commerces et des maisons de village."
+  },
+  {
+    "nom": "Reus",
+    "type": "ville",
+    "mer": 15,
+    "animation": "toute_annee",
+    "commerces": true,
+    "gare": true,
+    
+"typesBiens": [
+  "Appartement",
+  "Maison individuelle",
+  "Villa avec piscine"
+],
+  
+     "prixM2": null,
+   "anneePrix": null,
+    "description": "Ville dynamique disposant de nombreux commerces, services et équipements."
+  },
+  {
+    "nom": "Tarragone",
+    "type": "ville",
+    "mer": 0,
+    "animation": "toute_annee",
+    "commerces": true,
+    "gare": true,
+    
+"typesBiens": [
+  "Appartement",
+  "Maison individuelle",
+  "Villa avec piscine"
+],
+  
+     "prixM2": null,
+   "anneePrix": null,
+    "description": "Ville historique en bord de mer, avec de nombreux services."
+  },
+  {
+    "nom": "Pratdip",
+    "type": "village",
+    "mer": 20,
+    "animation": "calme",
+    "commerces": false,
+    "gare": false,
+    
+"typesBiens": [
+  "Appartement",
+  "Maison individuelle",
+  "Villa avec piscine"
+],
+  
+     "prixM2": null,
+   "anneePrix": null,
+    "description": "Village de caractère entouré de montagnes, adapté aux amateurs de tranquillité."
+  }
+]
+  

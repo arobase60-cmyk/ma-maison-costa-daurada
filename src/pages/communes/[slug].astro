@@ -1,0 +1,145 @@
+
+---
+import communes from "../../data/communes.json";
+
+export function getStaticPaths() {
+  return communes.map((commune) => {
+    const slug = commune.nom
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
+
+    return {
+      params: { slug },
+      props: { commune }
+    };
+  });
+}
+
+const { commune } = Astro.props;
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{commune.nom} | Ma Maison Costa Daurada</title>
+  </head>
+
+  <body>
+    <main>
+      <a href="/trouver-ma-ville/">← Retour aux résultats</a>
+
+      <h1>Découvrir {commune.nom}</h1>
+
+      {commune.image && (
+        <img src={commune.image} alt={commune.nom} />
+      )}
+
+      <p>{commune.description}</p>
+
+      <h2>Informations pratiques</h2>
+
+      <p>
+        <strong>Distance de la mer :</strong>
+        {commune.mer === 0
+          ? " En bord de mer"
+          : ` Environ ${commune.mer} minutes`}
+      </p>
+
+
+<h2>Services et transports</h2>
+
+<p>
+  <strong>Commerces :</strong>
+  {commune.commerces
+    ? " Commerces et services disponibles"
+    : " À vérifier"}
+</p>
+
+<p>
+  <strong>Gare ferroviaire :</strong>
+  {commune.gare
+    ? " Oui"
+    : " Non"}
+</p>
+
+
+<h2>Cadre de vie</h2>
+
+<p>
+  <strong>Ambiance :</strong>
+  {commune.animation === "toute_annee"
+    ? "Ville vivante toute l'année"
+    : commune.animation === "calme"
+      ? "Commune calme et résidentielle"
+      : "Station touristique animée en saison"}
+</p>
+
+      <h2>Immobilier</h2>
+
+      <p>
+        <strong>Prix moyen au m² :</strong>
+        {commune.prixM2 != null
+          ? ` ${commune.prixM2.toLocaleString("fr-FR")} €`
+          : " Données à compléter"}
+      </p>
+
+      <a
+  href={`/?commune=${encodeURIComponent(commune.nom)}#contact`}
+  class="contact-button"
+>
+  Vous souhaitez acheter à {commune.nom} ?
+  Parlons de votre projet →
+</a>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f7fbfb;
+    color: #263d46;
+    margin: 0;
+  }
+
+  main {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 30px;
+  }
+
+  h1, h2 {
+    color: #176b78;
+  }
+
+  img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin: 25px 0;
+  }
+
+  a {
+    color: #176b78;
+    font-weight: bold;
+  }
+  .contact-button {
+  display: inline-block;
+  background: #e7b65c;
+  color: #263d46;
+  padding: 16px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.contact-button:hover {
+  background: #dca342;
+}
+</style>
