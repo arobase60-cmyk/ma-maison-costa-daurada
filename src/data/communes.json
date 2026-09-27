@@ -862,7 +862,398 @@
       "description": "Les espaces ruraux autour du village comprennent des terres agricoles et des propriétés isolées. Avant un achat, il est important de vérifier les accès, les raccordements, les règles d'urbanisme et les risques naturels."
     }
   ]
+},
+
+{
+  "nom": "El Perelló",
+  "image": "/images/el-perello.jpg",
+  "type": "village",
+  "mer": 6,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": false,
+  "typesBiens": [
+    "Maison de village",
+    "Maison individuelle",
+    "Finca avec terrain"
+  ],
+  
+"prixM2": 1746,
+"anneePrix": 2026,
+
+  "description": "Village catalan entouré d'oliveraies, situé à quelques kilomètres de la Méditerranée. El Perelló offre un cadre de vie plus rural, avec des commerces et des services de proximité, tout en restant proche des plages.",
+  "quartiers": [
+    {
+      "nom": "Centre historique",
+      "description": "Rues traditionnelles, maisons de village et commerces de proximité. Un secteur à explorer pour les amateurs de rénovation."
+    },
+    {
+      "nom": "Périphérie du village",
+      "description": "Secteurs résidentiels avec des maisons individuelles et un accès pratique aux commerces du centre."
+    },
+    {
+      "nom": "Campagne et oliveraies",
+      "description": "Propriétés rurales et fincas avec terrain. Il est important de vérifier la situation urbanistique, l'accès à l'eau et les possibilités de rénovation avant l'achat."
+    },
+    {
+      "nom": "Secteur de Santa Llúcia",
+      "description": "Secteur côtier de la commune, à proximité des plages et des criques, avec des résidences secondaires et des maisons individuelles."
+    }
+  ]
+},
+
+{
+  "nom": "Camarles",
+  "image": "/images/camarles.jpg",
+  "type": "village",
+  "mer": 6,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison de village",
+    "Maison individuelle",
+    "Finca avec terrain"
+  ],
+ 
+"prixM2": 1025,
+"anneePrix": 2025,
+
+  "description": "Commune située aux portes du delta de l'Èbre, entre L'Ampolla et L'Aldea. Camarles offre un environnement rural, des commerces de proximité et un accès pratique aux plages et aux espaces naturels du delta.",
+  "quartiers": [
+    {
+      "nom": "Centre de Camarles",
+      "description": "Maisons de village, commerces et services de proximité. Un secteur à considérer pour une résidence principale ou un logement à rénover."
+    },
+    {
+      "nom": "Els Lligallos",
+      "description": "Ensemble de quartiers résidentiels de la commune, avec des maisons individuelles et une ambiance de village."
+    },
+    {
+      "nom": "Périphérie résidentielle",
+      "description": "Secteurs autour du centre et des principaux quartiers, où l'on peut rechercher des maisons avec davantage d'espace extérieur."
+    },
+    {
+      "nom": "Campagne et delta",
+      "description": "Environnement agricole avec des propriétés rurales. Avant tout achat, il convient de vérifier le statut urbanistique du terrain, les possibilités de rénovation et l'exposition aux inondations."
+    }
+  ]
+},
+
+{
+  "nom": "L'Aldea",
+  "image": "/images/aldea.jpg",
+  "type": "village",
+  "mer": 10,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison de village",
+    "Maison individuelle",
+    "Finca avec terrain"
+  ],
+  
+"prixM2": 1000,
+"anneePrix": 2026,
+
+  "description": "Commune située entre Tortosa et le delta de l'Èbre, L'Aldea bénéficie d'un accès pratique à l'AP-7 et au réseau ferroviaire. Son environnement résidentiel et agricole peut intéresser les acheteurs recherchant davantage d'espace tout en restant proches des services de Tortosa et du littoral.",
+  "quartiers": [
+    {
+      "nom": "Centre de L'Aldea",
+      "description": "Secteur regroupant des commerces, des services de proximité et des maisons de village. Une possibilité pour ceux qui souhaitent vivre à l'année."
+    },
+    {
+      "nom": "Hostasol",
+      "description": "Secteur résidentiel de la commune, avec des maisons individuelles et un environnement relativement calme."
+    },
+    {
+      "nom": "Périphérie résidentielle",
+      "description": "Secteurs autour du centre, où l'on peut rechercher des maisons avec jardin et davantage d'espace extérieur."
+    },
+    {
+      "nom": "Campagne environnante",
+      "description": "Propriétés rurales et terrains agricoles. Avant tout achat, il est important de vérifier la situation urbanistique, les raccordements et les risques d'inondation."
+    }
+  ]
+},
+
+{
+  "nom": "Tortosa",
+  "image": "/images/tortosa.jpg",
+  "type": "ville",
+  "mer": 20,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": true,
+  "typesBiens": [
+    "Appartement",
+    "Maison de ville",
+    "Maison individuelle",
+    "Finca avec terrain"
+  ],
+ 
+"prixM2": 975,
+"anneePrix": 2026,
+
+  "description": "Ville historique située sur les rives de l'Èbre, Tortosa dispose de nombreux commerces, de services de santé, d'établissements scolaires et d'une gare. Son centre ancien et ses quartiers résidentiels offrent différents types de logements, des appartements aux maisons individuelles.",
+  "quartiers": [
+    {
+      "nom": "Centre historique",
+      "description": "Rues anciennes et patrimoine architectural autour de la cathédrale. On y trouve notamment des appartements et des maisons de ville à rénover. Une vérification attentive de l'état des bâtiments et des contraintes patrimoniales est recommandée."
+    },
+    {
+      "nom": "Ferreries",
+      "description": "Quartier situé sur la rive droite de l'Èbre, avec des commerces, des appartements et des équipements de proximité. Un secteur à découvrir pour une résidence principale."
+    },
+    {
+      "nom": "Temple",
+      "description": "Quartier résidentiel disposant de commerces et de services, avec principalement des immeubles d'appartements et quelques maisons."
+    },
+    {
+      "nom": "Remolins",
+      "description": "Quartier ancien situé au nord du centre historique, avec des logements traditionnels et des possibilités de rénovation. Il est important de vérifier la situation du bien au regard des risques d'inondation."
+    }
+  ]
+},
+
+{
+  "nom": "Vandellòs",
+  "image": "/images/vandellos.jpg",
+  "type": "village",
+  "mer": 13,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": false,
+  "typesBiens": [
+    "Maison de village",
+    "Maison individuelle",
+    "Finca avec terrain"
+  ],
+  "prixM2": null,
+  "anneePrix": null,
+  "description": "Village de l'intérieur situé dans un environnement montagneux, Vandellòs fait partie de la commune de Vandellòs i l'Hospitalet de l'Infant. Il offre un cadre de vie rural, des maisons traditionnelles et un accès au littoral en voiture.",
+  "quartiers": [
+    {
+      "nom": "Centre historique",
+      "description": "Rues traditionnelles et maisons de village, dont certaines peuvent présenter un potentiel de rénovation. Un secteur intéressant pour les amateurs de patrimoine."
+    },
+    {
+      "nom": "Abords du village",
+      "description": "Secteurs résidentiels autour du centre, avec des maisons individuelles et un environnement plus ouvert."
+    },
+    {
+      "nom": "Masboquera",
+      "description": "Petit village appartenant à la même commune administrative, avec des maisons traditionnelles et une ambiance rurale."
+    },
+    {
+      "nom": "Masriudoms",
+      "description": "Village situé entre Vandellòs et le littoral, offrant des maisons de village et un accès relativement rapide à L'Hospitalet de l'Infant."
+    }
+  ]
+},
+
+{
+  "nom": "Tivissa",
+  "image": "/images/tivissa.jpg",
+  "type": "village",
+  "mer": 20,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": false,
+  "typesBiens": [
+    "Maison de village",
+    "Maison individuelle",
+    "Finca avec terrain"
+  ],
+  
+"prixM2": 1101,
+"anneePrix": 2026,
+
+  "description": "Village historique de la Ribera d'Ebre, Tivissa possède un centre ancien aux ruelles étroites, entouré de montagnes et de paysages méditerranéens. Il peut intéresser les acheteurs recherchant une maison de village, un projet de rénovation ou une propriété rurale, tout en restant à distance raisonnable du littoral.",
+  "quartiers": [
+    {
+      "nom": "Centre historique",
+      "description": "Ruelles anciennes, maisons traditionnelles en pierre et patrimoine architectural. Un secteur à explorer pour les amateurs de maisons de caractère et de rénovation."
+    },
+    {
+      "nom": "Abords du centre",
+      "description": "Secteurs résidentiels autour du village historique, avec des maisons individuelles et un accès pratique aux commerces et services de proximité."
+    },
+    {
+      "nom": "Campagne de Tivissa",
+      "description": "Propriétés rurales, oliveraies et fincas avec terrain. Avant tout achat, il est important de vérifier le statut urbanistique du bien, les raccordements et les possibilités de rénovation."
+    },
+    {
+      "nom": "La Serra d'Almos",
+      "description": "Village appartenant à la commune de Tivissa, dans un environnement rural et viticole. Il offre une autre possibilité pour les acheteurs recherchant une maison traditionnelle au calme."
+    }
+  ]
+},
+
+{
+  "nom": "Rasquera",
+  "image": "/images/rasquera.jpg",
+  "type": "village",
+  "mer": 25,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": false,
+  "typesBiens": [
+    "Maison de village",
+    "Maison individuelle",
+    "Finca avec terrain"
+  ],
+ 
+"prixM2": 1096,
+"anneePrix": 2026,
+
+  "description": "Village rural de la Ribera d'Ebre, Rasquera se situe au pied de la serra de Cardó, dans un environnement de montagnes et d'oliveraies. Son centre traditionnel et sa campagne environnante peuvent intéresser les acheteurs recherchant le calme, une maison ancienne à rénover ou une finca avec terrain.",
+  "quartiers": [
+    {
+      "nom": "Centre historique",
+      "description": "Ruelles traditionnelles et maisons de village, avec des possibilités de rénovation. L'état de la toiture, l'humidité et l'accessibilité méritent une attention particulière lors des visites."
+    },
+    {
+      "nom": "Abords du village",
+      "description": "Secteurs résidentiels proches du centre, avec des maisons individuelles et un accès aux commerces de proximité."
+    },
+    {
+      "nom": "Campagne et oliveraies",
+      "description": "Fincas et propriétés rurales entourées de terres agricoles. Avant un achat, il convient de vérifier la légalité des constructions, l'approvisionnement en eau et les raccordements."
+    },
+    {
+      "nom": "Route de Cardó",
+      "description": "Environnement rural en direction de la serra de Cardó, avec des paysages montagneux et des propriétés dispersées. L'accessibilité et les risques d'incendie sont à examiner selon l'emplacement."
+    }
+  ]
+},
+
+{
+  "nom": "Deltebre",
+  "image": "/images/deltebre.jpg",
+  "type": "ville",
+  "mer": 8,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": false,
+  "typesBiens": [
+    "Appartement",
+    "Maison de village",
+    "Maison individuelle",
+    "Villa avec piscine"
+  ],
+  
+"prixM2": 1453,
+"anneePrix": 2026,
+
+  "description": "Située au cœur du delta de l'Èbre, Deltebre offre un environnement naturel composé de rizières, de canaux et de paysages fluviaux. La commune dispose de commerces et de services de proximité. Elle intéresse aussi bien les personnes recherchant une résidence principale que les acheteurs souhaitant une maison de vacances à proximité des plages.",
+  "quartiers": [
+    {
+      "nom": "La Cava",
+      "description": "L'un des principaux secteurs de Deltebre, avec des commerces, des services et des logements variés. Il convient notamment aux personnes souhaitant vivre à l'année."
+    },
+    {
+      "nom": "Jesús i Maria",
+      "description": "Secteur résidentiel de Deltebre, avec des maisons individuelles, des appartements et des équipements de proximité."
+    },
+    {
+      "nom": "Riumar",
+      "description": "Urbanisation balnéaire située près de l'embouchure de l'Èbre, avec des maisons de vacances, des villas et un accès direct à la plage. L'activité y est davantage saisonnière."
+    },
+    {
+      "nom": "Campagne et rizières",
+      "description": "Secteurs ruraux du delta, avec des maisons dispersées et des propriétés agricoles. Il est indispensable de vérifier le statut urbanistique, les accès et les risques d'inondation avant tout achat."
+    }
+  ]
+},
+
+{
+  "nom": "Roquetes",
+  "image": "/images/roquetes.jpg",
+  "type": "ville",
+  "mer": 25,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": false,
+  "typesBiens": [
+    "Appartement",
+    "Maison de ville",
+    "Maison individuelle",
+    "Finca avec terrain"
+  ],
+  
+"prixM2": 1330,
+"anneePrix": 2026,
+
+  "description": "Voisine immédiate de Tortosa, Roquetes offre un cadre de vie résidentiel entre la vallée de l'Èbre et le massif des Ports. La commune dispose de commerces et de services de proximité, avec un accès rapide aux équipements de Tortosa. Son marché immobilier comprend des appartements, des maisons de ville et des propriétés rurales.",
+  "quartiers": [
+    {
+      "nom": "Centre-ville",
+      "description": "Secteur traditionnel regroupant commerces, services et logements variés. On y trouve notamment des appartements et des maisons de ville, parfois à rénover."
+    },
+    {
+      "nom": "Raval de Cristo",
+      "description": "Noyau résidentiel situé entre Roquetes et Tortosa, composé de maisons de village et de logements individuels. Sa situation facilite l'accès aux services des deux villes."
+    },
+    {
+      "nom": "Abords du centre",
+      "description": "Secteurs résidentiels périphériques proposant des maisons individuelles, parfois avec jardin, ainsi que des immeubles d'appartements."
+    },
+    {
+      "nom": "Campagne et pied des Ports",
+      "description": "Environnement rural avec des fincas, des oliveraies et des propriétés dispersées. Avant tout achat, il convient de vérifier le statut urbanistique, les raccordements et les risques naturels."
+    }
+  ]
+},
+
+{
+  "nom": "Xerta",
+  "image": "/images/xerta.jpg",
+  "type": "village",
+  "mer": 35,
+  "animation": "toute_annee",
+  "commerces": true,
+  "gare": false,
+  "typesBiens": [
+    "Maison de village",
+    "Maison individuelle",
+    "Finca avec terrain"
+  ],
+  "prixM2": null,
+  "anneePrix": null,
+  "description": "Village de la vallée de l'Èbre situé en amont de Tortosa, Xerta offre un cadre de vie paisible entre le fleuve, les vergers et les montagnes. Son centre traditionnel et sa campagne environnante peuvent intéresser les acheteurs recherchant une maison ancienne, un projet de rénovation ou une propriété rurale.",
+  "quartiers": [
+    {
+      "nom": "Centre historique",
+      "description": "Rues traditionnelles et maisons de village, dont certaines peuvent nécessiter des travaux de rénovation. La proximité des commerces facilite la vie quotidienne."
+    },
+    {
+      "nom": "Bords de l'Èbre",
+      "description": "Secteurs proches du fleuve, avec des vues sur la vallée et des habitations traditionnelles. Il est indispensable de consulter les cartes officielles des zones inondables avant tout achat."
+    },
+    {
+      "nom": "Abords du village",
+      "description": "Environnement résidentiel autour du centre, avec des maisons individuelles et des parcelles parfois plus spacieuses."
+    },
+    {
+      "nom": "Campagne et vergers",
+      "description": "Propriétés rurales entourées de terres agricoles. Pour les fincas, il convient de vérifier la légalité des bâtiments, les accès, l'approvisionnement en eau et les possibilités de rénovation."
+    }
+  ]
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
