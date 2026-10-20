@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ma-maison-costa-daurada.pages.dev/sitemap-index.xml
