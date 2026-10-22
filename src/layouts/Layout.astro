@@ -1,16 +1,24 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Basics</title>
+
+    <!-- Statistiques Umami -->
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="a8330995-df72-4630-a844-6f40ff99907c"
+      is:inline
+    ></script>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style>
